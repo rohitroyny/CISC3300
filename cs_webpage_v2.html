@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Homework3</title>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="parent-container">
+
+            <div class="majors-container">
+
+                <div class="majors-content-container">
+                    <h2>Majors and Minors</h2>
+                    <p class="passion">What's Your Passion?</p>
+                    <p class="passion">Accelerated Degree Programs</p>
+                    <div class="major-button">Majors and Minors</div>
+                </div>
+
+            </div>
+
+            <div class="computer-science-container">
+
+                <div class="computer-science-content-container">
+                    <div class="nav">
+                        Home
+                        <span class="divider">/</span>
+                        Admissions and Aid
+                        <span class="divider">/</span>
+                        Undergraduate Admission
+                        <span class="divider">/</span>
+                        Majors and Minors
+                        <span class="divider">/</span>
+                        Computer Science
+                    </div>
+                    <h1>Computer Science</h1>
+                    <div class="degree-options">Degree Options: Major, Minor<br>
+                    Locations: Lincoln Center, Rose Hill<br>
+                    Visit the <a href="#" class="department-link">Computer and Information Science Department</a> </div>
+                    <h3>Wherever there's a computer, there's a skilled person developing, maintaining, hacking, advancing or simply using it. Be that person.</h3>
+                    <p>It's difficult to imagine life without computers when they're so central to our information-driven global society. But it's not difficult to imagine the amazing pursuits you'll be prepared for with a degree in computer science from Fordham's department of Computer and Information Sciences.</p>
+                    <img src="https://www.fordham.edu/media/review/content-assets/migrated/images/iStock_000021097427Medium.jpg" alt="Computer Science" class="cs-image">
+                    <p>The computer science major emphasizes science and technology, including software design and programming, computer architecture and functions, and the development of an ability to analyze and solve problems in using the computer as a tool.</p>
+                    <p>Get inspired by the classes we offer: Programming, Bioinformatics, Robotics, and more. Video game design. Cyber security. Networking. Database management. Health and medical informatics.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <style>
+
+            body {
+                font-family: 'Raleway', sans-serif;
+                background-color: #d3d3d3;
+                margin: 0;
+                padding: 0;
+            }
+
+            .parent-container {
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                max-width: 1200px;
+                height: 100vh;
+            }
+
+            .majors-container {
+                background-color: #f8f8f8;
+                border-right: 1px solid lightgray;
+                padding: 20px 50px;
+            }
+
+            .majors-content-container h2 {
+                font-weight: 700;
+                color: black;
+                margin-bottom: 20px;
+            }
+
+            .passion {
+                background-color: #f8f8f8; /* Set the background to light grey */
+                color: black; /* Set the text color to black */
+                font-weight: normal; /* Remove bold */
+                font-size: 0.9em; /* Make font smaller */
+                margin: 5px 0; /* Adjust spacing */
+            }
+
+            .major-button {
+                background-color: #900028; /* Maroon color */
+                color: white;
+                padding: 10px;
+                margin-top: 20px;
+                cursor: pointer;
+                text-align: center;
+                font-weight: bold; /* Make the text bold */
+            }
+
+            .computer-science-container {
+                padding: 20px 50px;
+                background-color: #fff;
+            }
+
+            .computer-science-content-container {
+                display: flex; /* Use flexbox layout */
+                align-items: flex-start; /* Align items to the start of the flex container */
+                flex-wrap: wrap; /* Allows items to wrap as needed */
+            }
+
+            .computer-science-content-container h1 {
+                font-size: 2.5em;
+                color: #900028;
+                margin: 20px 0;
+                font-weight: normal;
+            }
+
+            .computer-science-content-container h3 {
+                font-weight: normal;
+            }
+
+            .majors-content-container h2 {
+                font-weight: 700;
+                color: #800000;
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+
+            .cs-image {
+                float: right;
+                width: 200px; /* Adjusts the size to be much smaller. You can change this value as needed */
+                margin-left: 20px; /* Adds spacing between the image and the text */
+                margin-bottom: 20px; /* Adds some space below the image if needed */
+            }
+
+            .nav, .degree-options, .locations, .department-link, .description {
+                color: #333;
+                line-height: 1.2;
+                margin: 5px 0;
+            }
+
+            .nav .divider {
+                color: #333;
+            }
+
+            @media screen and (min-width: 1200px) {
+                .parent-container {
+                    flex-direction: row;
+                }
+                .majors-container {
+                    width: 300px;
+                    order: 1;
+                }
+                .computer-science-container {
+                    width: 900px;
+                    order: 2;
+                }
+            }
+
+        </style>
+
+    </body>
+</html>
