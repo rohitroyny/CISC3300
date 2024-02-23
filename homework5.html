@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Elements</title>
+<style>
+  /* Add some basic styling */
+  #myButton, #secondButton {
+    margin: 10px;
+    padding: 5px 10px;
+  }
+  li {
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<!-- Button to change text on click -->
+<button id="myButton">Click Me!</button>
+
+<!-- List where each item changes color on click -->
+<ul>
+  <li>List Item 1</li>
+  <li>List Item 2</li>
+  <li>List Item 3</li>
+  <li>List Item 4</li>
+</ul>
+
+<!-- Div that contains a button, which will append a paragraph when clicked -->
+<div>
+  <button id="secondButton">Add Paragraph</button>
+</div>
+
+<script>
+  // a. Change button text on click
+  document.getElementById('myButton').addEventListener('click', function() {
+    this.textContent = "Clicked!";
+  });
+
+  // b. Change list items color to blue on click of any list item
+  document.querySelectorAll('li').forEach(function(item) {
+    item.addEventListener('click', function() {
+      document.querySelectorAll('li').forEach(function(li) {
+        li.style.color = 'blue';
+      });
+    });
+  });
+
+  // c. Append a paragraph after clicking a button within a div
+  document.getElementById('secondButton').addEventListener('click', function() {
+    let para = document.createElement('p');
+    para.textContent = "This is a new paragraph";
+    this.parentNode.appendChild(para);
+  });
+</script>
+
+</body>
+</html>
